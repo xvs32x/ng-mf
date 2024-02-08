@@ -1,9 +1,9 @@
 name: Merge Request
 on:
   pull_request:
-    # For the develop branch only.
-    branches:
-      - master
+# For the develop branch only.
+#    branches:
+#      - master
 jobs:
   build_npm_packages:
     name: Build NPM package and then publish docker image
