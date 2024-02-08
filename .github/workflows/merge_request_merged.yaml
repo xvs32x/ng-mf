@@ -1,12 +1,12 @@
 name: Merge Request Merged
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types:
+      - closed
 jobs:
   build_npm_packages:
     name: Build NPM package and then publish docker image
-    if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
