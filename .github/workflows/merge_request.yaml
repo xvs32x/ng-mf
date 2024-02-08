@@ -15,7 +15,7 @@ jobs:
           node-version: '18.x'
           registry-url: 'https://registry.npmjs.org'
       - run: yarn install --frozen-lockfile
-      - run: nx affected --target=build --configuration=production --base=origin/main --head=HEAD
+      - run: yarn nx affected --target=build --configuration=production --base=origin/main --head=HEAD
 #      - name: Log in to Docker Hub
 #        uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
 #        with:
