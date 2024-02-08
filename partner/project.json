@@ -101,6 +101,9 @@
           "buildTarget": "partner:build:production"
         }
       }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version"
     }
   }
 }

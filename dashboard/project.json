@@ -88,6 +88,9 @@
       "options": {
         "jestConfig": "dashboard/jest.config.ts"
       }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version"
     }
   }
 }

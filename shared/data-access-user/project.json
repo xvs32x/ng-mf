@@ -28,6 +28,9 @@
       "options": {
         "jestConfig": "shared/data-access-user/jest.config.ts"
       }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version"
     }
   }
 }
