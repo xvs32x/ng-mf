@@ -1,10 +1,11 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DataAccessUserComponent } from '@ng-mf/data-access-user';
 
 @Component({
   selector: 'ng-mf-nx-welcome',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, DataAccessUserComponent],
   template: `
     <!--
      * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -435,6 +436,7 @@ import { CommonModule } from '@angular/common';
             Welcome offer 👋
           </h1>
         </div>
+        <ng-mf-data-access-user></ng-mf-data-access-user>
         <!--  HERO  -->
         <div id="hero" class="rounded">
           <div class="text-container">
