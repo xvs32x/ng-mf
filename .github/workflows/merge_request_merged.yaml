@@ -11,6 +11,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - run: git config --global user.email "x64vs32x@mail.ru"
+      - run: git config --global user.name "Sergei Nagaitsev"
       - uses: actions/setup-node@v4
         with:
           node-version: '20.x'
