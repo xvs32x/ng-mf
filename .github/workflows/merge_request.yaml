@@ -9,11 +9,11 @@ jobs:
     name: Build NPM package and then publish docker image
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
           fetch-tags: true
-      - run: git checkout HEAD^
+#      - run: git checkout HEAD^
       - uses: actions/setup-node@v3
         with:
           node-version: '20.x'
