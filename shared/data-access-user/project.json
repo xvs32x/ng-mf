@@ -31,9 +31,7 @@
     },
     "version": {
       "executor": "@jscutlery/semver:version",
-      "options": {
-        "push": true
-      }
+      "options": {}
     },
     "github": {
       "executor": "@jscutlery/semver:github",
