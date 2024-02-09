@@ -5,12 +5,13 @@ on:
       - closed
 jobs:
   build_npm_packages:
-    name: Build NPM package and then publish docker image
+    name: Publish tags
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          fetch-tags: true
       - run: git config --global user.email "x64vs32x@mail.ru"
       - run: git config --global user.name "Sergei Nagaitsev"
       - uses: actions/setup-node@v4

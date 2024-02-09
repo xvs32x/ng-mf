@@ -3,15 +3,16 @@ on:
   pull_request:
 jobs:
   build_npm_packages:
-    name: Build NPM package and then publish docker image
+    name: Check build health
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          fetch-tags: true
       - uses: actions/setup-node@v4
         with:
           node-version: '20.x'
       - run: yarn install --frozen-lockfile
       - run: yarn nx affected --target=build --configuration=production --base=origin/main
-#      - run: yarn nx affected --target=version --base=origin/main --dryRun
+      - run: yarn nx affected --target=version --base=origin/main --skipRootChangelog --skipProjectChangelog --dryRun
