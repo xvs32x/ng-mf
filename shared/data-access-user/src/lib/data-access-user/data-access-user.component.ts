@@ -9,4 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './data-access-user.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DataAccessUserComponent {}
+export class DataAccessUserComponent {
+  constructor() {
+  }
+}
