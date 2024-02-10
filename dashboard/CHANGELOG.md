@@ -2,6 +2,15 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.1.1](https://github.com/xvs32x/ng-mf/compare/dashboard-0.1.0...dashboard-0.1.1) (2024-02-10)
+
+### Dependency Updates
+
+* `data-access-user` updated to version `0.3.0`
+* `offer` updated to version `0.1.1`
+* `partner` updated to version `0.1.1`
+
+
 # 0.1.0 (2024-02-09)
 
 
