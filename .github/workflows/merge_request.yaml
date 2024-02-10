@@ -15,4 +15,4 @@ jobs:
           node-version: '20.x'
       - run: yarn install --frozen-lockfile
       - run: yarn nx affected --target=build --configuration=production --base=origin/main
-      - run: yarn nx affected --target=version --base=origin/main --skipRootChangelog --skipProjectChangelog --dryRun
+      - run: yarn nx affected --target=version --base=origin/main --skipRootChangelog --skipProjectChangelog --trackDeps --dryRun
