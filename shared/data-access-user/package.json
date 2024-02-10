@@ -1,6 +1,6 @@
 {
   "name": "@ng-mf/data-access-user",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "peerDependencies": {
     "@angular/common": "^17.1.0",
     "@angular/core": "^17.1.0"

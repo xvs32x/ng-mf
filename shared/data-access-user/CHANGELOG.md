@@ -2,6 +2,15 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+# [0.3.0](https://github.com/xvs32x/ng-mf/compare/data-access-user-0.2.0...data-access-user-0.3.0) (2024-02-10)
+
+
+### Features
+
+* **lib:** add onInit ([#15](https://github.com/xvs32x/ng-mf/issues/15)) ([0db8f49](https://github.com/xvs32x/ng-mf/commit/0db8f4906cf55e4caa8ceebbc88dab39a25bdcef))
+
+
+
 # [0.2.0](https://github.com/xvs32x/ng-mf/compare/data-access-user-0.1.0...data-access-user-0.2.0) (2024-02-09)
 
 
