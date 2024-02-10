@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,7 +9,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './data-access-user.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DataAccessUserComponent {
+export class DataAccessUserComponent implements OnInit {
   constructor() {
+  }
+
+  ngOnInit(): void {
   }
 }
